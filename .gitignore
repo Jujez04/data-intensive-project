@@ -1,1 +1,17 @@
+# Kaggle
+kaggle.json
+
+# venv Python
+.env
+venv/
+env/
+agri_env/
+diaenv/
+
+# Datasets
+data/
 *.csv
+*.zip
+
+# Cache files
+.ipynb_checkpoints/
