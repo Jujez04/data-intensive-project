@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>dia-project</title>
+    <title>Inserimento dati - dia-project</title>
 </head>
 <body>
     <h1>Progetto DIA - Previsione colture e fertilizzanti</h1>
     <p>Inserisci i parametri all'interno dei campi: </p>
 
     <form action="/predict" method="POST">
+        <label for="soil">Tipo di Suolo:</label>
+        <select id="soil" name="Soil" required>
+            <option value="Sandy">Sabbioso (Sandy)</option>
+            <option value="Loamy">Limoso (Loamy)</option>
+            <option value="Black">Nero (Black)</option>
+            <option value="Red">Rosso (Red)</option>
+            <option value="Clayey">Argilloso (Clayey)</option>
+        </select>
+
+        <label>Azoto (N):</label> <input type="number" step="0.1" name="Nitrogen" required>
+        <label>Fosforo (P):</label> <input type="number" step="0.1" name="Phosphorus" required>
+        <label>Potassio (K):</label> <input type="number" step="0.1" name="Potassium" required>
+        
+        <label>Valore pH:</label> 
+        <input type="number" step="0.1" name="pH_Value" required>
+        
+        <label>Temperatura (°C):</label> <input type="number" step="0.1" name="Temperature" required>
+        <label>Umidità (%):</label> <input type="number" step="0.1" name="Humidity" required>
+        <label>Pioggia (mm):</label> <input type="number" step="0.1" name="Rainfall" required>
 
         <button type="submit">Invia</button>
     </form>
