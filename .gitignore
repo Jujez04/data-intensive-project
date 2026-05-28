@@ -15,3 +15,6 @@ data/
 
 # Cache files
 .ipynb_checkpoints/
+
+# Models joblib
+*.pkl
