@@ -30,12 +30,12 @@ def predict():
         crop_predicted = model_1.predict(input_crop)[0]
 
         input_fertilizer = pd.DataFrame([{
-            "Temperature": temp, 
-            "Humidity": hum, 
-            "Rainfall": rain, 
-            "pH_Value": ph, 
-            "Nitrogen": N, 
-            "Phosphorus": P, 
+            "Temperature": temp,
+            "Humidity": hum,
+            "Rainfall": rain,
+            "pH_Value": ph,
+            "Nitrogen": N,
+            "Phosphorus": P,
             "Potassium": K,
             "Soil": soil,
             "Carbon": carbon,
