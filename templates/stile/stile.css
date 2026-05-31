@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    min-height: 100vh;
     font-size: clamp(16px, 2vw, 24px);
     font-family: 'Arial', sans-serif;
     gap: 15px;
