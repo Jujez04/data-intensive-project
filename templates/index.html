@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Inserimento dati - dia-project</title>
+     <link rel="stylesheet" href="stile/stile.css">
 </head>
 <body>
     <h1>Progetto DIA - Previsione colture e fertilizzanti</h1>
     <p>Inserisci i parametri all'interno dei campi: </p>
 
     <form action="/predict" method="POST">
-        <label for="soil">Tipo di Suolo:</label>
-        <select id="soil" name="Soil" required>
-            <option value="Sandy">Sabbioso (Sandy)</option>
-            <option value="Loamy">Limoso (Loamy)</option>
-            <option value="Black">Nero (Black)</option>
-            <option value="Red">Rosso (Red)</option>
-            <option value="Clayey">Argilloso (Clayey)</option>
-        </select> </br>
-        <label>Azoto (N):</label> <input type="number" step="0.1" name="Nitrogen" required> </br>
-        <label>Fosforo (P):</label> <input type="number" step="0.1" name="Phosphorus" required> </br>
-        <label>Potassio (K):</label> <input type="number" step="0.1" name="Potassium" required> </br>
-        <label>Valore pH:</label><input type="number" step="0.1" name="pH_Value" required> </br>
-        <label>Temperatura (°C):</label> <input type="number" step="0.1" name="Temperature" required> </br>
-        <label>Umidità (%):</label> <input type="number" step="0.1" name="Humidity" required> </br>
-        <label>Pioggia (mm):</label> <input type="number" step="0.1" name="Rainfall" required> </br>
-        <label>Carbonio (C):</label> <input type="number" step="0.1" name="Carbon" required> </br>
-        <button type="submit">Invia</button>
+        <div class="form-group">
+            <label for="soil">Tipo di Suolo:
+            <select id="soil" name="Soil" required>
+                <option value="Sandy">Sabbioso (Sandy)</option>
+                <option value="Loamy">Limoso (Loamy)</option>
+                <option value="Black">Nero (Black)</option>
+                <option value="Red">Rosso (Red)</option>
+                <option value="Clayey">Argilloso (Clayey)</option>
+            </select>
+            </label>
+
+            <label>Azoto (N):<input type="number" step="0.1" name="Nitrogen" required> </label> 
+            <label>Fosforo (P):<input type="number" step="0.1" name="Phosphorus" required></label> 
+            <label>Potassio (K):<input type="number" step="0.1" name="Potassium" required></label>
+            <label>Valore pH:<input type="number" step="0.1" name="pH_Value" required></label>
+            <label>Temperatura (°C):<input type="number" step="0.1" name="Temperature" required></label>
+            <label>Umidità (%):<input type="number" step="0.1" name="Humidity" required></label> 
+            <label>Pioggia (mm):<input type="number" step="0.1" name="Rainfall" required></label> 
+            <label>Carbonio (C):<input type="number" step="0.1" name="Carbon" required></label>
+            <button type="submit">Invia</button>
+        </div>
     </form>
 </body>
 </html>

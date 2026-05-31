@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Risultato - dia-project</title>
+    <link rel="stylesheet" href="stile/stile.css">
 </head>
 <body>
 
-    <h2>Coltura consigliata: </h2> <div>{{ crop }}</div>
+    <div class="result-container" id="crop-result">
+        <h2>Coltura consigliata: </h2> <div class="result-value">{{ crop }}</div>
+    </div>
 
-    <h2> Fertilizzante consigliato: </h2> <div>{{ fertilizer }}</div>
+    <div class="result-container" id="fertilizer-result">
+        <h2> Fertilizzante consigliato: </h2> <div class="result-value">{{ fertilizer }}</div>
+    </div>
 
     <a href="/" class="btn">Nuova analisi</a>
 </body>
