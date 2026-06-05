@@ -9,12 +9,12 @@ agri_env/
 diaenv/
 
 # Datasets
-data/
-*.csv
-*.zip
+# data/
+# *.csv
+# *.zip
 
 # Cache files
 .ipynb_checkpoints/
 
 # Models joblib
-*.pkl
+# *.pkl
